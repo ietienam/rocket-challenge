@@ -41,16 +41,16 @@ Add the instructions to test the API in your repository's README
 Add the instructions to test the API in your repository's README
 - Surprise us!
 
-**Sample of the input format**
-2
-1 PT
-2 US
-3
-1 1 10
-2 1 5
-3 2 10
-**Sample of the output format**
-1 7.50
-2 10.00
-PT 7.50
-US 10.00
+**Sample of the input format**  
+2  
+1 PT  
+2 US  
+3  
+1 1 10  
+2 1 5  
+3 2 10  
+**Sample of the output format**  
+1 7.50  
+2 10.00  
+PT 7.50  
+US 10.00  
