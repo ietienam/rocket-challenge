@@ -2,6 +2,7 @@
 
 module.exports = {
   analyzeTasks: (string) => {
+    if (!string.includes('\n')) return 'Invalid input format'
     // store input data in an array by splitting new line at removing \r
     let input = string.split("\n").map((m) => m.replace("\r", ""));
     // remove the empty string at the end
@@ -39,6 +40,8 @@ module.exports = {
           avg[el.split(" ")[1]] += parseInt(el.split(" ")[2]);
           avg[el.split(" ")[1]] /= count;
         }
+      } else {
+        avg[el.split(" ")[1]] = 0;
       }
 
       for (let key in userCountry) {
@@ -51,6 +54,8 @@ module.exports = {
           } else {
             avg[userCountry[key]] = parseInt(el.split(" ")[2]);
           }
+        } else {
+          avg[userCountry[key]] = 0;
         }
       }
     }
